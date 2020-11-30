@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <%= title %> </title>
+    <% include partials/head.html %>
+</head>
+
+<body>
+    <!--<h1>Hello Word <%= 5 + 5 %> </h1> 
+        <script>  
+            alert('Works'); 
+        </script> -->
+    <!-- ctrl K ctrl F para ordenar codigo html -->
+    <% include partials/navigation.html %>
+    <br><br>
+    <div class="container">
+        <!--es para centrar el contenido-->
+        <header class="row">
+            <div class="col-lg-12 text-center">
+                <img src="/img/Logo_TECNM.png" class="animate_bounce" alt="TecNM">
+            </div>
+        </header>
+    </div>
+    <br><br>
+    <!-- SECTION ONE -->
+        <div class="container-fluid" id="about">
+            <div class="row bg-dark text-white p-2 text-center">
+                <div class="col-sm-6">
+                    <i class="fab fa-facebook fa-10x"></i>
+                </div>
+                <br>
+                <div class="col-sm-5">
+                    <h2>Encuentranos en facebook</h2>
+                    <p>Siguenos en todas nuestras redes sociales para estar al tanto de toda la informacion.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <% include partials/footer.html %>
+</body>
+
+</html>
